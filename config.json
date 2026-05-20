@@ -1,0 +1,24 @@
+{
+  "refund_rate": {
+    "threshold": 15,
+    "penalty_score": 15,
+    "enabled": true
+  },
+  "data_source": {
+    "provider": "fastmoss",
+    "api_key": "ttvfovadndspwzhdsomdcwrhejxkicgn",
+    "api_endpoint": "https://openapi.fastmoss.com/creator/v1/categoryInfo",
+    "cache_ttl_seconds": 3600,
+    "rate_limit_per_minute": 60,
+    "region": "US",
+    "daily_cost_limit": 10
+  },
+  "scoring": {
+    "weights": {
+      "concentration": 0.4,
+      "content_density": 0.35,
+      "barrier": 0.25
+    },
+    "content_density_saturation": 2000
+  }
+}
